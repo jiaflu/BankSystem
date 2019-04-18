@@ -23,7 +23,7 @@ public class TestController {
     public BankResult sayHello(){
         System.out.println("get request");
 //        testService.test1();
-        return BankResult.ok("你好");
+        return BankResult.ok("你好,lalalal");
     }
 
     //请求格式 /user/hello/1
