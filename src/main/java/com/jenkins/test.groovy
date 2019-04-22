@@ -1,23 +1,13 @@
-import redis.clients.jedis.Pipeline
+node {
+    stage('build-using-scm'){
+        echo 'build'
+    }
 
-Jenkinsfile (Declarative Pipeline)
-pipeline {
-    agent any
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building....'
-            }
-        }
-        stage('Test'){
-            steps {
-                echo 'Building....'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+    stage('test-using-scm'){
+        echo 'test'
+    }
+
+    stage('deploy-using-scm'){
+        echo 'deploy'
     }
 }
